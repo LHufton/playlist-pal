@@ -1,4 +1,5 @@
-import { useState } from 'react' // Corrected import
+import { useState } from 'react'
+import PropTypes from 'prop-types' // Import PropTypes
 import './PlayList.css'
 import TrackList from '../TrackList/TrackList'
 
@@ -43,6 +44,15 @@ const Playlist = ({
       </button>
     </div>
   )
+}
+
+// Define PropTypes for Playlist component
+Playlist.propTypes = {
+  playlistName: PropTypes.string,
+  playlistTracks: PropTypes.array.isRequired, // Assuming it's an array. Adjust as necessary.
+  onNameChange: PropTypes.func.isRequired,
+  onRemove: PropTypes.func.isRequired,
+  onSave: PropTypes.func.isRequired
 }
 
 export default Playlist
