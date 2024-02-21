@@ -18,12 +18,6 @@ const Playlist = ({
     onNameChange(newName)
   }
 
-  const handleKeyPress = (event) => {
-    if (event.key === 'Enter' && name) {
-      onSave()
-    }
-  }
-
   const handleClick = (event) => {
     event.target.setSelectionRange(0, event.target.value.length)
   }
@@ -35,7 +29,6 @@ const Playlist = ({
         placeholder="Enter a playlist name"
         value={name}
         onChange={handleNameChange}
-        onKeyPress={handleKeyPress}
         onClick={handleClick}
       />
       <TrackList tracks={playlistTracks} onRemove={onRemove} isRemoval={true} />

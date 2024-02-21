@@ -1,4 +1,4 @@
-import Playlist from './components/PlayList/Playlist'
+import PlayList from './components/PlayList/Playlist'
 import SearchBar from './components/SearchBar/SearchBar'
 import SearchResults from './components/SearchResults/SearchResults'
 import Track from './components/Track/Track'
@@ -8,7 +8,7 @@ import './App.css'
 const App = () => {
   return (
     <div>
-      <Playlist />
+      <PlayList />
       <SearchBar />
       <SearchResults />
       <Track />
