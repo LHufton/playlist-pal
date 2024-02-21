@@ -1,7 +1,8 @@
 import axios from 'axios'
 
-const clientId = 'placeholder-text'
-const redirectUri = 'placeholder-url'
+export const clientId = import.meta.env.Spotify_Client_Id
+export const clientSecret = import.meta.env.Spotify_Client_Secret
+const redirectUri = 'https://playlist-pal-f8ebfbb8903f.herokuapp.com/callback'
 let accessToken
 
 const Spotify = {
