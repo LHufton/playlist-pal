@@ -9,7 +9,7 @@ const SearchBar = ({ onSearch }) => {
     setSearchTerm(event.target.value)
   }
 
-  const handleKeyPress = (event) => {
+  const handleKeyDown = (event) => {
     if (event.key === 'Enter' && searchTerm) {
       search()
     }
@@ -32,7 +32,7 @@ const SearchBar = ({ onSearch }) => {
         placeholder="Enter a Song, Album, or Artist"
         value={searchTerm}
         onChange={handleTermChange}
-        onKeyPress={handleKeyPress}
+        onKeyDown={handleKeyDown}
         onClick={handleClick}
       />
       <button onClick={search}>SEARCH</button>

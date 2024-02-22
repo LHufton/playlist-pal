@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types' // Import PropTypes
-import './PlayList.css'
+// import './PlayList.css'
 import TrackList from '../TrackList/TrackList'
 
 const Playlist = ({

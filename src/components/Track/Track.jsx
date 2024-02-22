@@ -2,35 +2,19 @@ import './Track.css'
 import PropTypes from 'prop-types'
 
 const Track = ({ track, isRemoval, onAdd, onRemove }) => {
-  const addTrack = () => {
-    onAdd(track)
-  }
-
-  const removeTrack = () => {
-    onRemove(track)
-  }
-
-  const renderAction = () => {
-    return isRemoval ? (
-      <button className="Track-action" onClick={removeTrack}>
-        -
-      </button>
-    ) : (
-      <button className="Track-action" onClick={addTrack}>
-        +
-      </button>
-    )
+  const handleAction = () => {
+    isRemoval ? onRemove(track) : onAdd(track)
   }
 
   return (
     <div className="Track">
       <div className="Track-information">
         <h3>{track.name}</h3>
-        <p>
-          {track.artist} | {track.album}
-        </p>
+        <p>{`${track.artist} | ${track.album}`}</p>
       </div>
-      {renderAction()}
+      <button className="Track-action" onClick={handleAction}>
+        {isRemoval ? '-' : '+'}
+      </button>
     </div>
   )
 }
@@ -42,8 +26,8 @@ Track.propTypes = {
     album: PropTypes.string.isRequired
   }).isRequired,
   isRemoval: PropTypes.bool.isRequired,
-  onAdd: PropTypes.func,
-  onRemove: PropTypes.func
+  onAdd: PropTypes.func.isRequired,
+  onRemove: PropTypes.func.isRequired
 }
 
 export default Track
