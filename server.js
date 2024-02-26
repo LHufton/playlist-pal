@@ -1,9 +1,10 @@
+import 'dotenv/config'
 import express from 'express'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
-const app = express()
 const PORT = process.env.PORT || 3001
+const app = express()
 
 // Convert the URL of the current module to a file path
 const __filename = fileURLToPath(import.meta.url)
