@@ -1,8 +1,28 @@
-# React + Vite
+# mind-project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Date:
 
-Currently, two official plugins are available:
+02/26/2024
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Author:
+
+Luke Hufton
+
+```markdown
+[https://www.linkedin.com/in/luke-hufton/]
+```
+
+```markdown
+[https://github.com/LHufton]
+```
+
+### Description
+
+#### **_Playlist-Pal_**
+
+This application allows users to find artists, songs, and albums to create their own custom playlists. 
+
+### Technologies
+
+MongodbExpressReactNode.js
+![GitHub top language](https://img.shields.io/github/languages/top/ProPip23/UnsocialMedia)
